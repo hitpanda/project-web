@@ -1,0 +1,11 @@
+- Link bài tập: https://www.w3schools.com/w3css/w3css_templates.asp
+
+Những thành phần thường gặp trên giao diện website
+1. Header (Đầu trang)
+2. Navigation (Điều hướng)
+3. Breadcrumb (Vị trí trang hiện tại)
+4. Sidebar (menu chính)
+5. Slider (Dạng chính là những hình ảnh trượt trên giao diện)
+6. Banner (Ảnh quảng cáo)
+7. Content (Nội dung chính)
+8. Footer (Chân trang)

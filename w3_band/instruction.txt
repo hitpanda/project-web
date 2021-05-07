@@ -1,0 +1,18 @@
+THỰC HÀNH 1: https://www.w3schools.com/w3css/tryw3css_templates_band.htm
+
+Thursday, May 6, 2021
+
+1. Phân tích
+	1. Header
+	2. Slider
+	3. Content
+		1. About
+		2. Tour
+		3. Contact
+		4. Image
+		5. Footer
+	4. Footer
+2. Dựng base (xây móng)
+3. Xây dựng từng phần theo phân tích
+4. Hoàn thiện
+
