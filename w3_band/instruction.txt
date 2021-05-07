@@ -10,7 +10,6 @@ Thursday, May 6, 2021
 		2. Tour
 		3. Contact
 		4. Image
-		5. Footer
 	4. Footer
 2. Dựng base (xây móng)
 3. Xây dựng từng phần theo phân tích
