@@ -1,0 +1,63 @@
+/* 
+    1. Vị trí
+    2. Kích thước (width, height)
+    3. Màu sắc
+    4. Kiểu dáng (kiểu chữ, hình, border...)
+*/
+
+/* header */
+.header {
+    height: 46px;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar__list {
+    list-style: none;
+}
+
+.navbar__item {
+    display: inline-block;
+    height: 46px;
+}
+
+.navbar__item:hover .navbar__item-link {
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: #ccc;
+}
+
+.navbar__item-link {
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    padding: 15px 24px;
+    color: var(--white-color);
+    width: auto;
+}
+
+.navbar__subnav {
+
+}
+
+.navbar__subnav-btn {
+    
+}
+
+/* slider */
+.slider {
+
+}
+
+/* content */
+.content {
+
+}
+
+/* footer */
+.footer {
+
+}

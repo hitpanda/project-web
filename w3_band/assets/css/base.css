@@ -1,0 +1,21 @@
+:root {
+    --black-color: #000;
+    --white-color: #fff;
+    --text-color: #010001;
+}
+
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* 100% = 16px */
+    /* HACK: 62.5% = 10px = 1rem */
+    font-size: 62.5%;
+    line-height: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
