@@ -10,7 +10,7 @@ Thursday, May 6, 2021
 		2. Tour -> OK
 		3. Contact -> OK
 		4. Map -> OK
-	4. Footer ->
+	4. Footer -> OK
 2. Dựng base (xây móng) -> OK
 3. Xây dựng từng phần theo phân tích -> OK
 4. Hoàn thiện -> OK

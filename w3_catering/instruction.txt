@@ -1,7 +1,16 @@
 THỰC HÀNH 2:
 	https://www.w3schools.com/w3css/tryw3css_templates_gourmet_catering.htm
 
-1. Phân tích
-2. Dựng base
+1. Phân tích -> OK
+	1. Header
+		1. Header heading -> OK
+		2. nav -> OK
+	2. Slider -> OK
+	3. Content
+		1. About
+		2. Our menu
+		3. Contact
+	4. Footer
+2. Dựng base -> OK
 3. Code
 4. Hoàn thành
