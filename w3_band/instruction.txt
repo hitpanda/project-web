@@ -2,16 +2,16 @@ THỰC HÀNH 1: https://www.w3schools.com/w3css/tryw3css_templates_band.htm
 
 Thursday, May 6, 2021
 
-1. Phân tích
-	1. Header
-	2. Slider
-	3. Content
-		1. About
-		2. Tour
-		3. Contact
-		4. Image
-	4. Footer
-2. Dựng base (xây móng)
-3. Xây dựng từng phần theo phân tích
-4. Hoàn thiện
+1. Phân tích -> OK
+	1. Header -> OK
+	2. Slider -> OK
+	3. Content 
+		1. About ->  OK
+		2. Tour -> OK
+		3. Contact -> OK
+		4. Map -> OK
+	4. Footer ->
+2. Dựng base (xây móng) -> OK
+3. Xây dựng từng phần theo phân tích -> OK
+4. Hoàn thiện -> OK
 
