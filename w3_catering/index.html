@@ -7,13 +7,15 @@
     <title>w3_catering</title>
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
     <div class="main">
         <header class="header">
             <a href="#" class="header__heading">Gourmet au Catering</a>
             <nav class="nav">
-                <ul class="nav__list">
+                <ul class="nav__list hidden-on-mobile">
                     <li class="nav__list-item">
                         <a href="#about" class="nav__list-item-link">About</a>
                     </li>
@@ -25,6 +27,7 @@
                     </li>
                 </ul>
             </nav>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list" class="nav__hidden-icon svg-inline--fa fa-list fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"></path></svg>
         </header>
 
         <div class="slider">
@@ -34,12 +37,12 @@
 
         <div class="content">
             <div id="about" class="about">
-                <div class="grid">
-                    <div class="grid__row">
-                        <div class="grid__row-1-2">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-6 m-12 c-12">
                             <img src="./assets/img/tablesetting2.jpg" alt="" class="about__img">
                         </div>
-                        <div class="grid__row-1-2">
+                        <div class="col l-6 m-12 c-12">
                             <div class="about__content">
                                 <h1 class="about__content-heading">About Catering</h1>
                                 <h5 class="about__content-title">Tradition since 1889</h5>
@@ -52,27 +55,27 @@
             </div>
             <hr class="pagination">
             <div id="menu" class="menu">
-                <div class="grid">
-                    <div class="grid__row">
-                        <div class="grid__row-1-2">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-6 m-12 c-12">
                             <h1 class="menu__heading">Our Menu</h1>
                             <br>
-                            <h4>Bread Basket</h4>
-                            <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                            <h4 class="menu__description">Bread Basket</h4>
+                            <p class="menu__info">Assortment of fresh baked fruit breads and muffins 5.50</p>
                             <br>
-                            <h4>Honey Almond Granola with Fruits</h4>
-                            <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                            <h4 class="menu__description">Honey Almond Granola with Fruits</h4>
+                            <p class="menu__info">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
                             <br>
-                            <h4>Belgian Waffle</h4>
-                            <p>Vanilla flavored batter with malted flour 7.50</p>
+                            <h4 class="menu__description">Belgian Waffle</h4>
+                            <p class="menu__info">Vanilla flavored batter with malted flour 7.50</p>
                             <br>
-                            <h4>Scrambled eggs</h4>
-                            <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                            <h4 class="menu__description">Scrambled eggs</h4>
+                            <p class="menu__info">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
                             <br>
-                            <h4>Blueberry Pancakes</h4>
-                            <p>With syrup, butter and lots of berries 8.50</p>
+                            <h4 class="menu__description">Blueberry Pancakes</h4>
+                            <p class="menu__info">With syrup, butter and lots of berries 8.50</p>
                         </div>
-                        <div class="grid__row-1-2">
+                        <div class="col l-6 m-12 c-12">
                             <img src="./assets/img/tablesetting.jpg" alt="" class="menu__img">
                         </div>
                     </div>
@@ -80,32 +83,38 @@
             </div>
             <hr class="pagination">
             <div id="contact" class="contact">
-                <div class="grid">
-                    <div class="grid__row">
-                        <h1 class="contact__heading">Contact</h1>
-                        <br>
-                        <p class="contact__description">We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
-                        <p class="contact__local">Catering Service, 42nd Living St, 43043 New York, NY</p>
-                        <p class="contact__phone">You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col c-12">
+                            <h1 class="contact__heading">Contact</h1>
+                            <br>
+                            <p class="contact__description">We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+                            <p class="contact__local">Catering Service, 42nd Living St, 43043 New York, NY</p>
+                            <p class="contact__phone">You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+                        </div>
                     </div>
-                    <div class="grid__row">
-                        <form class="contact__mes">
-                            <p>
-                                <input type="text" class="contact__mes-input" placeholder="Name">
-                            </p>
-                            <p>
-                                <input type="number" class="contact__mes-input" placeholder="How many people">
-                            </p>
-                            <p>
-                                <input type="datetime-local" class="contact__mes-input" placeholder="Date and time">
-                            </p>
-                            <p>
-                                <input type="text" class="contact__mes-input" placeholder="Message \ Special requirements">
-                            </p>
-                        </form>
+                    <div class="row">
+                        <div class="col c-12">
+                            <form class="contact__mes">
+                                <p>
+                                    <input type="text" class="contact__mes-input" placeholder="Name">
+                                </p>
+                                <p>
+                                    <input type="number" class="contact__mes-input" placeholder="How many people">
+                                </p>
+                                <p>
+                                    <input type="datetime-local" class="contact__mes-input" placeholder="Date and time">
+                                </p>
+                                <p>
+                                    <input type="text" class="contact__mes-input" placeholder="Message \ Special requirements">
+                                </p>
+                            </form>
+                        </div>
                     </div>
-                    <div class="grid__row">
-                        <span class="contact__btn">SEND MESSAGE</span>
+                    <div class="row">
+                        <div class="col c-12">
+                            <span class="contact__btn">SEND MESSAGE</span>
+                        </div>
                     </div>
                 </div>
             </div>
