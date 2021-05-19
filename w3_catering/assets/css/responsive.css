@@ -5,6 +5,10 @@
       display: block;
       margin: 0 auto;
    }
+   .header__heading:hover,
+   .nav__list-item-link:hover {
+      background-color: transparent;
+   }
 }
 
 /* Mobile */
@@ -23,7 +27,7 @@
       line-height: 26px;
    }
    .grid.wide {
-      padding: 32px 0;
+      padding: 54px 0;
    }
    .about__img,
    .menu__img {
@@ -78,6 +82,14 @@
    }
    .nav__hidden-icon {
       display: block;
+   }
+   .nav__mobile {
+      display: block;
+   }
+   .nav {
+      position: absolute;
+      top: 60px;
+      right: 0;
    }
 }
 

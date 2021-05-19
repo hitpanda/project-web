@@ -14,8 +14,12 @@
     <div class="main">
         <header class="header">
             <a href="#" class="header__heading">Gourmet au Catering</a>
-            <nav class="nav">
-                <ul class="nav__list hidden-on-mobile">
+            <label for="nav__mobile-checkbox" class="nav__mobile">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="nav__mobile-icon svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+            </label>
+            <input type="checkbox" hidden id="nav__mobile-checkbox" class="nav__checkbox">
+            <nav class="nav hidden-on-mobile">
+                <ul class="nav__list">
                     <li class="nav__list-item">
                         <a href="#about" class="nav__list-item-link">About</a>
                     </li>
@@ -27,7 +31,23 @@
                     </li>
                 </ul>
             </nav>
-            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list" class="nav__hidden-icon svg-inline--fa fa-list fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"></path></svg>
+            <label for="nav__mobile-checkbox" class="nav__overlay"></label>
+            <nav class="mobile-nav">
+                <label for="nav__mobile-checkbox" class="mobile-nav__close">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+                </label>
+                <ul class="mobile-nav__list">
+                    <li class="mobile-nav__list-item">
+                        <a href="#about" class="mobile-nav__list-item-link">About</a>
+                    </li>
+                    <li class="mobile-nav__list-item">
+                        <a href="#menu" class="mobile-nav__list-item-link">Menu</a>
+                    </li>
+                    <li class="mobile-nav__list-item">
+                        <a href="#contact" class="mobile-nav__list-item-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
         <div class="slider">
