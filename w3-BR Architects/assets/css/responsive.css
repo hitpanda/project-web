@@ -1,0 +1,50 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+   .footer {
+      padding: 24px 0;
+   }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+   .hidden-on-mobile {
+      display: none;
+   }
+   .header__heading {
+      padding-left: 0;
+   }
+   .nav-mobile__bars-wrap {
+      display: block;
+   }
+   .slider__label {
+      font-size: 1.8rem;
+      line-height: 22px;
+   }
+   .projects__heading,
+   .about__heading,
+   .contact__heading {
+      font-size: 1.8rem;
+   }
+   .projects__name {
+      left: 12px;
+   }
+   .projects__heading,
+   .about__heading,
+   .contact__heading {
+      margin-left: 12px;
+      margin-right: 12px;
+   }
+   .about__description,
+   .contact__description {
+      padding: 0 12px;
+   }
+   .contact__info-item input {
+      width: calc(100% - 20px);
+   }
+   .contact__btn {
+      margin-left: 12px;
+   }
+}
+
+/* Tablet */
+

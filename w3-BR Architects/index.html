@@ -14,7 +14,7 @@
    <div class="main">
       <header class="header">
          <a href="#" class="header__heading"><b>BR</b>  Architects</a>
-         <nav class="header__nav">
+         <nav class="header__nav hidden-on-mobile">
             <ul class="header__nav-list">
                <li class="header__nav-item">
                   <a href="#projects" class="header__nav-item-link">Projects</a>
@@ -24,6 +24,28 @@
                </li>
                <li class="header__nav-item">
                   <a href="#contact" class="header__nav-item-link">Contact</a>
+               </li>
+            </ul>
+         </nav>
+         <!-- nav-mobile -->
+         <label for="nav-mobile__checkbox" class="nav-mobile__bars-wrap">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="nav-mobile__bars-icon svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+         </label>
+         <input type="checkbox" hidden class="nav__checkbox" id="nav-mobile__checkbox">
+         <label for="nav-mobile__checkbox" class="nav-mobile__overlay"></label>
+         <nav class="nav-mobile">
+            <label for="nav-mobile__checkbox" class="nav-mobile__close">
+               <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="nav-mobile__close-icon svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+            </label>
+            <ul class="nav-mobile__list">
+               <li class="nav-mobile__item">
+                  <a href="#projects" class="nav-mobile__item-link">Projects</a>
+               </li>
+               <li class="nav-mobile__item">
+                  <a href="#about" class="nav-mobile__item-link">About</a>
+               </li>
+               <li class="nav-mobile__item">
+                  <a href="#contact" class="nav-mobile__item-link">Contact</a>
                </li>
             </ul>
          </nav>
@@ -43,35 +65,35 @@
                </div>
                <div class="projects__content">
                   <div class="row">
-                     <div class="col l-3">
+                     <div class="col l-3 m-4 c-12">
                         <p class="projects__name">Summer House</p>
                         <img src="./assets/img/house5.jpg" alt="" class="projects__img">
                      </div>
-                     <div class="col l-3">
+                     <div class="col l-3 m-4 c-12">
                         <p class="projects__name">Brick House</p>
                         <img src="./assets/img/house2.jpg" alt="" class="projects__img">
                      </div>
-                     <div class="col l-3">
+                     <div class="col l-3 m-4 c-12">
                         <p class="projects__name">Renovated</p>
                         <img src="./assets/img/house3.jpg" alt="" class="projects__img">
                      </div>
-                     <div class="col l-3">
+                     <div class="col l-3 m-4 c-12">
                         <p class="projects__name">Barn House</p>
                         <img src="./assets/img/house4.jpg" alt="" class="projects__img">
                      </div>
-                     <div class="col l-3">
+                     <div class="col l-3 m-4 c-12">
                         <p class="projects__name">Summer House</p>
                         <img src="./assets/img/house2.jpg" alt="" class="projects__img">
                      </div>
-                     <div class="col l-3">
+                     <div class="col l-3 m-4 c-12">
                         <p class="projects__name">Brick House</p>
                         <img src="./assets/img/house5 (1).jpg" alt="" class="projects__img">
                      </div>
-                     <div class="col l-3">
+                     <div class="col l-3 m-4 c-12">
                         <p class="projects__name">Renovated</p>
                         <img src="./assets/img/house4.jpg" alt="" class="projects__img">
                      </div>
-                     <div class="col l-3">
+                     <div class="col l-3 m-4 c-12">
                         <p class="projects__name">Barn House</p>
                         <img src="./assets/img/house3.jpg" alt="" class="projects__img">
                      </div>
@@ -89,7 +111,7 @@
                   <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                </div>
                <div class="row">
-                  <div class="col l-3">
+                  <div class="col l-3 m-6 c-12">
                      <div class="about__people">
                         <img src="./assets/img/team2.jpg" alt="" class="about__people-img">
                         <p class="about__people-name">John Doe</p>
@@ -98,7 +120,7 @@
                         <p class="about__people-contact">Contact</p>
                      </div>
                   </div>
-                  <div class="col l-3">
+                  <div class="col l-3 m-6 c-12">
                      <div class="about__people">
                         <img src="./assets/img/team1.jpg" alt="" class="about__people-img">
                         <p class="about__people-name">Jane Doe</p>
@@ -107,7 +129,7 @@
                         <p class="about__people-contact">Contact</p>
                      </div>
                   </div>
-                  <div class="col l-3">
+                  <div class="col l-3 m-6 c-12">
                      <div class="about__people">
                         <img src="./assets/img/team3.jpg" alt="" class="about__people-img">
                         <p class="about__people-name">Mike Ross</p>
@@ -116,7 +138,7 @@
                         <p class="about__people-contact">Contact</p>
                      </div>
                   </div>
-                  <div class="col l-3">
+                  <div class="col l-3 m-6 c-12">
                      <div class="about__people">
                         <img src="./assets/img/team4.jpg" alt="" class="about__people-img">
                         <p class="about__people-name">Dan Star</p>
