@@ -217,9 +217,6 @@
    width: 100%;
 }
 
-.contact__info-item {
-}
-
 .contact__info-item input {
    display: block;
    width: calc(100% - 16px);
