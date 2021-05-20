@@ -1,0 +1,17 @@
+Thực Hành 3:
+   https://www.w3schools.com/w3css/tryw3css_templates_architect.htm
+
+1.Phân tích -> OK
+   1. Header -> OK
+      1. Header__heading
+      2. nav
+   2. Slider
+   3. Content
+      1. Projects
+      2. About
+      3. Contact
+      4. Map
+   4. Footer
+2. Dựng base
+3. Code
+4. Hoàn thiện
