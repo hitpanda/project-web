@@ -1,0 +1,262 @@
+.main {
+   overflow: hidden;
+}
+
+/* header */
+.header {
+   position: fixed;
+   z-index: 5;
+   width: 100%;
+   top: 0;
+   height: var(--header-height);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: #000;
+   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.3);
+   background-color: #fff;
+}
+
+/* JS will do */
+/* .header:decrement {
+   color: #000;
+   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.3);
+   background-color: #fff;
+   animation: animateTop 0.4s;
+}
+
+.header:decrement .nav__list-item-link,
+.header:decrement .nav__list-item-icon {
+   color: #000;
+}
+
+@keyframes animateTop {
+   from {
+      top: -42px;
+   }
+   to {
+      top: 0;
+   }
+} */
+
+.nav {
+   height: var(--header-height);
+}
+
+.nav__list {
+   list-style: none;
+   max-height: var(--header-height);
+   display: flex;
+}
+
+.nav__list-item {
+   height: var(--header-height);
+}
+
+.nav__list-item-link {
+   /* color: #777; */
+   display: flex;
+   color: #000;
+   text-decoration: none;
+   font-size: 1.5rem;
+   align-items: center;
+   line-height: calc(var(--header-height) - 16px);
+   padding: 8px 16px;
+   height: 100%;
+}
+
+.nav__list-item-link:hover {
+   cursor: pointer;
+   background-color: #ccc;
+}
+
+.nav__list-item-link p {
+   position: relative;
+   top: 2px;
+}
+
+.nav__list-item-link svg {
+   position: relative;
+   top: 1px;
+}
+
+.nav__list-item-icon {
+   width: 1.4rem;
+   height: 1.4rem;
+   /* color: #777; */
+   color: #000;
+   margin-right: 2px;
+}
+
+.header__search {
+   max-height: var(--header-height);
+   padding: 12.8px 16px;
+}
+
+.header__search:hover {
+   background-color: #f44336;
+   color: #fff;
+   cursor: pointer;
+}
+
+.header__search-icon {
+   width: 1.4rem;
+   height: 1.4rem;
+   position: relative;
+   top: 1px;
+}
+
+.nav__list-item-link.nav__home {
+   position: relative;
+   padding-top: 10px;
+   padding-bottom: 7px;
+}
+
+/* slider */
+.slider {
+   background-image: url('https://www.w3schools.com/w3images/parallax1.jpg');
+   background-attachment: scroll;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   min-height: 400px;
+   opacity: 0.8;
+   position: relative;
+}
+
+.slider__label {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 12px 24px;
+   background-color: #000;
+   color: #fff;
+   font-size: 2.4rem;
+   letter-spacing: 10px;
+   line-height: 28px;
+   font-weight: 200;
+}
+
+/* about */
+.about {
+   color: #777;
+}
+
+.about__heading {
+   font-size: 2.4rem;
+   font-weight: 200;
+   line-height: 26px;
+   padding: 12px 0;
+   width: 100%;
+   text-align: center;
+}
+
+.about__title {
+   font-size: 1.5rem;
+   text-align: center;
+   font-style: italic;
+   margin: 10px 0;
+   width: 100%;
+   text-align: center;
+}
+
+.about__description {
+   font-size: 1.5rem;
+   margin: 15px 0;
+   line-height: 2.6rem;
+}
+
+.row.row-about {
+   margin-right: -24px;
+   margin-left: -24px;
+}
+
+.col.l-6.col-about {
+   padding: 12px 24px;
+}
+
+.about__me {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.about__name {
+   font-size: 1.5rem;
+   margin: 15px;
+}
+
+.about__name-icon {
+   width: 15px;
+   height: 15px;
+   position: relative;
+   top: -1px;
+}
+
+.about__img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 4px;
+   display: block;
+   margin: 0 auto;
+}
+
+.about__info {
+   font-size: 1.5rem;
+   margin: 15px 0;
+   line-height: 26px;
+}
+
+.about__skill {
+   font-size: 1.8rem;
+   margin: 15px 0;
+   padding: 16px 0;
+   line-height: 26px;
+   width: 100%;
+   text-align: center;
+}
+
+.row.about-sub {
+   margin: 15px 0;
+   align-items: center;
+}
+
+.about-sub__icon {
+   width: 15px;
+   height: 15px;
+   margin-right: 8px;
+}
+
+.about-sub__name {
+   font-size: 1.5rem;
+   letter-spacing: 8px;
+   line-height: 22px;
+}
+
+.row.about__percent-skill {
+   height: 34px;
+   background-color: #f1f1f1;
+}
+
+.row.about__percent-skill p {
+   color: #fff;
+   font-size: 1.5rem;
+   background-color: #616161;
+   padding: 4px 0;
+   text-align: center;
+   line-height: 26px;
+}
+
+.skill-90 {
+   width: 90%;
+}
+
+.skill-85 {
+   width: 85%;
+}
+
+.skill-75 {
+   width: 75%;
+}

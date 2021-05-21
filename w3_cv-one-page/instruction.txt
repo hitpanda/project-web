@@ -1,0 +1,16 @@
+THỰC HÀNH 4:
+   https://www.w3schools.com/w3css/tryw3css_templates_parallax.htm
+
+1. Phân tích -> OK
+   1. Header
+      1. nav
+      2. search
+   2. Slider
+   3. Content
+      1. About me
+      2. Portfolio
+      3. Contact
+   4. Footer
+2. Dựng base
+3. Code
+4. Hoàn thiện
