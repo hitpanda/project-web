@@ -13,7 +13,8 @@
 <body>
    <div class="main">
       <header class="header">
-         <nav class="nav">
+         <!-- nav > mobile resolution -->
+         <nav class="nav hidden-on-mobile">
             <ul class="nav__list">
                <li class="nav__list-item">
                   <a href="#" class="nav__list-item-link nav__home">HOME</a>
@@ -39,6 +40,35 @@
             </ul>
          </nav>
 
+         <!-- nav mobile -->
+         <label for="nav-mobile__checkbox" class="nav-mobile__click">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="nav-mobile__bars svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+         </label>
+         <input type="checkbox" hidden id="nav-mobile__checkbox" class="nav-mobile__checkbox">
+         <label for="nav-mobile__checkbox" class="nav-mobile__overlay"></label>
+         <nav class="nav-mobile">
+            <ul class="nav-mobile__list">
+               <li class="nav-mobile__list-item">
+                  <a href="#" class="nav-mobile__list-item-link nav-mobile__home">HOME</a>
+               </li>
+               <li class="nav-mobile__list-item">
+                  <a href="#about" class="nav-mobile__list-item-link">
+                     ABOUT
+                  </a>
+               </li>
+               <li class="nav-mobile__list-item">
+                  <a href="#my-work" class="nav-mobile__list-item-link">
+                     PORTFOLIO
+                  </a>
+               </li>
+               <li class="nav-mobile__list-item">
+                  <a href="#contact" class="nav-mobile__list-item-link"> 
+                     CONTACT
+                  </a>
+               </li>
+            </ul>
+         </nav>
+
          <div class="header__search">   
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="header__search-icon svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
          </div>
@@ -52,71 +82,71 @@
          <!-- about me -->
          <div id="about" class="grid wide about">
             <div class="row">
-               <div class="col l-12">
+               <div class="col l-12 m-12">
                   <h2 class="about__heading">ABOUT ME</h2>
                </div>
             </div>
             <div class="row">
-               <div class="col l-12">
+               <div class="col l-12 m-12">
                   <p class="about__title">I love photography</p>
                </div>
             </div>
             <div class="row">
-               <div class="col l-12">
+               <div class="col l-12 m-12">
                   <p class="about__description">
                      We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   </p>
                </div>
             </div>
             <div class="row row-about">
-               <div class="col l-6 col-about">
+               <div class="col l-6 m-6 col-about">
                   <div class="about__me">
                      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" class="about__name-icon svg-inline--fa fa-user fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
                      <p class="about__name">My Name</p>
                   </div>
                   <img src="./assets/img/avatar_hat.jpg" alt="avatar_hat" class="about__img">
                </div>
-               <div class="col l-6 col-about">
+               <div class="col l-6 m-6 col-about">
                   <p class="about__info">
                      Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   </p>
                </div>
             </div>
             <div class="row">
-               <div class="col l-12">
+               <div class="col l-12 m-12">
                   <p class="about__skill">Im really good at:</p>
                </div>
             </div>
             <div class="row">
-               <div class="col l-12 about-sub">
+               <div class="col l-12 m-12 about-sub">
                   <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="camera" class="about-sub__icon svg-inline--fa fa-camera fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M512 144v288c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48h88l12.3-32.9c7-18.7 24.9-31.1 44.9-31.1h125.5c20 0 37.9 12.4 44.9 31.1L376 96h88c26.5 0 48 21.5 48 48zM376 288c0-66.2-53.8-120-120-120s-120 53.8-120 120 53.8 120 120 120 120-53.8 120-120zm-32 0c0 48.5-39.5 88-88 88s-88-39.5-88-88 39.5-88 88-88 88 39.5 88 88z"></path></svg>
                   <p class="about-sub__name">Photography</p>
                </div>
             </div>
             <div class="row">
-               <div class="col l-12 about__percent-skill">
+               <div class="col l-12 m-12 about__percent-skill">
                   <p class="skill-90">90%</p>
                </div>
             </div>
             <div class="row">
-               <div class="col l-12 about-sub">
+               <div class="col l-12 m-12 about-sub">
                   <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="laptop" class="about-sub__icon svg-inline--fa fa-laptop fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"></path></svg>
                   <p class="about-sub__name">Photography</p>
                </div>
             </div>
             <div class="row">
-               <div class="col l-12 about__percent-skill">
+               <div class="col l-12 m-12 about__percent-skill">
                   <p class="skill-85">85%</p>
                </div>
             </div>
             <div class="row">
-               <div class="col l-12 about-sub">
+               <div class="col l-12 m-12 about-sub">
                   <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="image" class="about-sub__icon svg-inline--fa fa-image fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 336H54a6 6 0 0 1-6-6V118a6 6 0 0 1 6-6h404a6 6 0 0 1 6 6v276a6 6 0 0 1-6 6zM128 152c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zM96 352h320v-80l-87.515-87.515c-4.686-4.686-12.284-4.686-16.971 0L192 304l-39.515-39.515c-4.686-4.686-12.284-4.686-16.971 0L96 304v48z"></path></svg>
                   <p class="about-sub__name">Photography</p>
                </div>
             </div>
             <div class="row">
-               <div class="col l-12 about__percent-skill">
+               <div class="col l-12 m-12 about__percent-skill">
                   <p class="skill-75">75%</p>
                </div>
             </div>
@@ -154,12 +184,12 @@
          <!-- my work -->
          <div class="grid wide" id="my-work">
             <div class="row">
-               <div class="col l-12">
+               <div class="col l-12 m-12">
                   <h2 class="my-work__heading">MY WORK</h2>
                </div>
             </div>
             <div class="row">
-               <div class="col l-12">
+               <div class="col l-12 m-12">
                   <p class="my-work__title">
                      Here are some of my latest lorem work ipsum tipsum.
                   </q>
@@ -170,28 +200,28 @@
                </div>
             </div>
             <div class="row">
-               <div class="col l-3">
+               <div class="col l-3 m-4">
                   <img src="./assets/img/p1.jpg" alt="" class="my-work__img">
                </div>
-               <div class="col l-3">
+               <div class="col l-3 m-4">
                   <img src="./assets/img/p2.jpg" alt="" class="my-work__img">
                </div>
-               <div class="col l-3">
+               <div class="col l-3 m-4">
                   <img src="./assets/img/p3.jpg" alt="" class="my-work__img">
                </div>
-               <div class="col l-3">
+               <div class="col l-3 m-4">
                   <img src="./assets/img/p4.jpg" alt="" class="my-work__img">
                </div>
-               <div class="col l-3">
+               <div class="col l-3 m-4">
                   <img src="./assets/img/p5.jpg" alt="" class="my-work__img">
                </div>
-               <div class="col l-3">
+               <div class="col l-3 m-4">
                   <img src="./assets/img/p6.jpg" alt="" class="my-work__img">
                </div>
-               <div class="col l-3">
+               <div class="col l-3 m-4">
                   <img src="./assets/img/p7.jpg" alt="" class="my-work__img">
                </div>
-               <div class="col l-3">
+               <div class="col l-3 m-4">
                   <img src="./assets/img/p8.jpg" alt="" class="my-work__img">
                </div>
             </div>
@@ -207,20 +237,20 @@
          <!-- contact -->
          <div id="contact" class="grid wide contact">
             <div class="row">
-               <div class="col l-12">
+               <div class="col l-12 m-12">
                   <h2 class="contact__heading">WHERE I WORK</h2>
                </div>
             </div>
             <div class="row">
-               <div class="col l-12">
+               <div class="col l-12 m-12">
                   <p class="contact__title">I'd love your feedback!</p>
                </div>
             </div>
             <div class="row">
-               <div class="col l-4">
+               <div class="col l-4 m-12">
                   <img src="./assets/img/map.jpg" alt="map" class="contact__map">
                </div>
-               <div class="col l-8">
+               <div class="col l-8 m-12">
                   <div class="contact__detail">           
                      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" class="contact__detail-icon svg-inline--fa fa-map-marker-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>
                      <p class="contact__detail-label">Chicago, US</p>

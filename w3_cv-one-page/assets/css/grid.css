@@ -42,14 +42,27 @@
       margin-left: -8px;
       margin-right: -8px;
    }
-   
    .col {
       padding-left: 8px;
       padding-right: 8px;
    }
-   
    .m-0 {
       display: none;
+   }
+   .m-4 {
+      display: block;
+      flex: 0 0 calc(100% / 3);
+      max-width: calc(100% / 3);
+   }
+   .m-6 {
+      display: block;
+      flex: 0 0 50%;
+      max-width: 50%;
+   }
+   .m-12 {
+      display: block;
+      flex: 0 0 100%;
+      max-width: 100%;
    }
 }
 
