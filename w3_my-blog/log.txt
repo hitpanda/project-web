@@ -1,0 +1,6 @@
+THUC HANH 5:
+   https://www.w3schools.com/w3css/tryw3css_templates_blog.htm
+
+1. Header
+2. Content
+3. Footer
