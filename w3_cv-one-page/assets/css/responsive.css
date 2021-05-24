@@ -18,6 +18,29 @@
       width: 20px;
       height: 20px;
    }
+   .slider__label {
+      width: calc(100% - 222px);
+      padding: 12px 16px;
+      font-size: 1.8rem;
+      line-height: 22px;
+      text-align: center;
+   }
+   .col.l-12.about__percent-skill {
+      margin-left: 4px;
+      flex: 0 0 calc(100% - 8px);
+      max-width: calc(100% - 8px);
+   }
+   .portfolio__background-img h2,
+   .contact__background-img h2 {
+      font-size: 2.4rem;
+      line-height: 24px;
+   }
+   .col.l-8.m-12.c-12 {
+      margin-top: 10px;
+   }
+   .nav-mobile__click {
+      display: block;
+   }
 }
 
 /* Tablet */
@@ -38,5 +61,4 @@
    .grid.footer {
       padding: 20px 12px;
    }
-   
 }

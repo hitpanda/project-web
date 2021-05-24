@@ -99,9 +99,11 @@ function myFunction() {
    margin-right: 2px;
 }
 
+/* nav mobile */
 .nav-mobile__click {
    max-height: var(--header-height);
    padding: 9.8px 16px;
+   display: none;
 }
 
 .nav-mobile__click svg {
@@ -122,11 +124,21 @@ function myFunction() {
    right: 0;
    bottom: 0;
    background-color: rgba(0, 0, 0, 0.6);
+   animation: fadeIn linear 0.2s;
    display: none;
 }
 
 .nav-mobile__checkbox:checked ~ .nav-mobile__overlay {
    display: block;
+}
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
 }
 
 .nav-mobile {
@@ -136,11 +148,14 @@ function myFunction() {
    bottom: 0;
    min-width: 320px;
    background-image: linear-gradient(135deg,rgb(116, 116, 240), rgb(192, 78, 236));
-   display: none;
+   transform: translateX(-100%);
+   opacity: 0;
+   transition: transform linear 0.2s, opacity linear 0.2s;
 }
 
 .nav-mobile__checkbox:checked ~ .nav-mobile {
-   display: block;
+   transform: translateX(0);
+   opacity: 1;
 }
 
 .nav-mobile__list {
