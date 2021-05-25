@@ -1,0 +1,11 @@
+/* mobile */
+@media (max-width: 739px) {
+   .post-wrap {
+      flex: 0 0 100%;
+      max-width: 100%;
+   }
+   .more-info {
+      flex: 0 0 100%;
+      max-width: 100%;
+   }
+}
