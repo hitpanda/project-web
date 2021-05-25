@@ -1,0 +1,81 @@
+.grid {
+   width: 100%;
+   display: block;
+   padding: 0;
+}
+
+.grid.wide {
+   max-width: 1400px;
+   margin: 0 auto;
+}
+
+.row {
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: -4px;
+   margin-right: -4px;
+}
+
+.col {
+   padding-left: 4px;
+   padding-right: 4px;
+}
+
+/* Tablet */
+@media (min-width: 740px) {
+
+}
+
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+   .wide {
+      width: 644px;
+   }
+}
+
+/* PC media resolution */
+@media (min-width: 1113px) {
+   .row {
+      margin-left: -8px;
+      margin-right: -8px;
+   }
+   .col {
+      padding-left: 8px;
+      padding-right: 8px;
+   }
+   .l-4 {
+      display: block;
+      flex: 0 0 calc(100% / 3);
+      max-width: calc(100% / 3);
+   }
+   .l-8 {
+      display: block;
+      flex: 0 0 calc(100% * 2 / 3);
+      max-width: calc(100% * 2 / 3);
+   }
+}
+
+/* > PC resolution */
+@media (min-width: 1024px) and (max-width: 1339px) {
+   .wide {
+      width: 984px;
+   }
+   .wide .row {
+      margin-left: -8px;
+      margin-right: -8px;
+   }
+   .wide .col {
+      padding-left: 8px;
+      padding-right: 8px;
+   }
+   .wide .l-4 {
+      display: block;
+      flex: 0 0 calc(100% / 3);
+      max-width: calc(100% / 3);
+   }
+   .wide .l-8 {
+      display: block;
+      flex: 0 0 calc(100% * 2 / 3);
+      max-width: calc(100% * 2 / 3);
+   }
+}
