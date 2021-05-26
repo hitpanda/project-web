@@ -25,6 +25,12 @@
    display: none;
 }
 
+.c-12 {
+   display: block;
+   flex: 0 0 100%;
+   max-width: 100%;
+}
+
 /* >= tablet */
 @media (min-width: 740px) {
    .row {
@@ -37,6 +43,16 @@
    }
    .m-0 {
       display: none;
+   }
+   .m-4 {
+      display: block;
+      flex: 0 0 calc(100% / 3);
+      max-width: calc(100% / 3);
+   }
+   .m-12 {
+      display: block;
+      flex: 0 0 100%;
+      max-width: 100%;
    }
 }
 

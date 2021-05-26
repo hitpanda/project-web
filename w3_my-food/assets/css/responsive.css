@@ -1,0 +1,16 @@
+/* mobile && tablet */
+/* mobile */
+@media (max-width: 739px) {
+   .license__heading,
+   .blog__heading,
+   .tags__heading,
+   .license__des {
+      width: 100%;
+      text-align: center;
+   }
+   .license__link {
+      justify-content: center;
+   }
+}
+
+/* tablet */
