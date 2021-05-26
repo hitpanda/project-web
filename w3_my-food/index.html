@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Food</title>
+   <link rel="stylesheet" href="./assets/css/base.css">
+   <link rel="stylesheet" href="./assets/css/main.css">
+   <link rel="stylesheet" href="./assets/css/grid.css">
+   <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+   <div class="main" id="main">
+      <header class="header" id="header">
+         <nav class="nav">
+            <label for="nav-hidden__checkbox" class="nav__icon-wrap">
+               <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="nav__icon svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+            </label>
+            <p>My Food</p>
+            <p>Mail</p>
+         </nav>
+
+         <input type="checkbox" hidden id="nav-hidden__checkbox" class="nav-hidden__checkbox">
+         <label for="nav-hidden__checkbox" class="nav-hidden__overlay"></label>
+         <ul class="nav-hidden">
+            <li class="nav-hidden__item">
+               <label for="nav-hidden__checkbox" class="nav-hidden__close">
+                  Close Menu
+               </label>
+            </li>
+            <li class="nav-hidden__item">
+               <a href="#food" class="nav-hidden__item-link">Food</a>
+            </li>
+            <li class="nav-hidden__item">
+               <a href="#about" class="nav-hidden__item-link">About</a>
+            </li>
+         </ul>
+      </header>
+
+      <div class="content" id="content">
+         <div class="grid wide food" id="food">
+            <div class="row">
+               <div class="col l-3">
+                  <img src="./assets/img/sandwich.jpg" alt="sandwich" class="food__img">
+                  <h2 class="food__name">The Perfect Sandwich, A Real NYC Classic</h2>
+                  <p class="food__des">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+               </div>
+               <div class="col l-3">
+                  <img src="./assets/img/steak.jpg" alt="steak" class="food__img">
+                  <h2 class="food__name">Let Me Tell You About This Steak</h2>
+                  <p class="food__des">Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+               </div>
+               <div class="col l-3">
+                  <img src="./assets/img/cherries.jpg" alt="cherries" class="food__img">
+                  <h2 class="food__name">Cherries, interrupted</h2>
+                  <p class="food__des">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                  <p class="food__des">What else?</p>
+               </div>
+               <div class="col l-3">
+                  <img src="./assets/img/wine.jpg" alt="wine" class="food__img">
+                  <h2 class="food__name">Once Again, Robust Wine and Vegetable Pasta</h2>
+                  <p class="food__des">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+               </div>
+               <div class="col l-3">
+                  <img src="./assets/img/popsicle.jpg" alt="popsicle" class="food__img">
+                  <h2 class="food__name">All I Need Is a Popsicle</h2>
+                  <p class="food__des">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+               </div>
+               <div class="col l-3">
+                  <img src="./assets/img/salmon.jpg" alt="salmon" class="food__img">
+                  <h2 class="food__name">Salmon For Your Skin</h2>
+                  <p class="food__des">Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+               </div>
+               <div class="col l-3">
+                  <img src="./assets/img/sandwich.jpg" alt="sandwich" class="food__img">
+                  <h2 class="food__name">The Perfect Sandwich, A Real Classic</h2>
+                  <p class="food__des">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+               </div>
+               <div class="col l-3">
+                  <img src="./assets/img/croissant.jpg" alt="croissant" class="food__img">
+                  <h2 class="food__name">Le French</h2>
+                  <p class="food__des">Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+               </div>
+            </div>
+
+            <div class="row page">
+               <a href="#" class="page__link">«</a>
+               <a href="#" class="page__link page__link--active">1</a>
+               <a href="#" class="page__link">2</a>
+               <a href="#" class="page__link">3</a>
+               <a href="#" class="page__link">4</a>
+               <a href="#" class="page__link">»</a>
+            </div>
+         </div>
+
+         <hr id="about">
+
+         <div class="grid wide about">
+            <div class="row">
+               <div class="col l-12">
+                  <h2 class="about__heading">About Me, The Food Man</h2>
+               </div>
+               <div class="col l-12">
+                  <img src="./assets/img/chef.jpg" alt="chef" class="about__img">
+               </div>
+               <div class="col l-12">
+                  <p class="about__text">I am Who I Am!</p>
+               </div>
+               <div class="col l-12">
+                  <p class="about__text">With Passion For Real, Good Food</p>
+               </div>
+               <div class="col l-12">
+                  <p class="about__text">
+                     Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                  </p>
+               </div>
+            </div>
+         </div>
+         <hr>
+      </div>
+
+      <footer class="grid wide footer" id="footer">
+         <div class="row">
+            <div class="col l-4 license">
+               <h2 class="license__heading">FOOTER</h2>
+               <p class="license__des">
+                  Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+               </p>
+               <div class="license__link">
+                  <p>Powered by</p>
+                  <a href="#">w3.css</a>
+               </div>
+            </div>
+            <div class="col l-4 blog">
+               <h2 class="blog__heading">BLOG POSTS</h2>
+               <div class="blog__post blog__post--has-border">
+                  <img src="./assets/img/workshop.jpg" alt="workshop" class="blog__post-img">
+                  <div class="blog__post-content">
+                     <p>Lorem</p>
+                     <span>Sed mattis nunc</span>
+                  </div>
+               </div>
+               <div class="blog__post">
+                  <img src="./assets/img/gondol.jpg" alt="gondol" class="blog__post-img">
+                  <div class="blog__post-content">
+                     <p>Ipsum</p>
+                     <span>Praes tinci sed</span>
+                  </div>
+               </div>
+            </div>
+            <div class="col l-4 tags">
+               <h2 class="tags__heading">POPULAR TAGS</h2>
+               <div class="tags__title">
+                  <span class="tags__title--active">Travel</span>
+                  <span>New York</span>
+                  <span>Dinner</span>
+                  <span>Salmon</span>
+                  <span>France</span>
+                  <span>Drinks</span>
+                  <span>Ideas</span>
+                  <span>Flavors</span>
+                  <span>Cuisine</span>
+                  <span>Chicken</span>
+                  <span>Dressing</span>
+                  <span>Fried</span>
+                  <span>Fish</span>
+                  <span>Duck</span>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+</body>
+</html>

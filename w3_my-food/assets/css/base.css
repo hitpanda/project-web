@@ -1,0 +1,17 @@
+:root {
+   --header-height: 68px;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   font-size: 62.5%;
+   line-height: 16px;
+   font-family: 'Times New Roman', Times, serif;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}

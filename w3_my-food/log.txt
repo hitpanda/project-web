@@ -1,0 +1,9 @@
+THUC HANH 6:
+   https://www.w3schools.com/w3css/tryw3css_templates_food_blog.htm
+
+1. Header
+   1. Sidebar
+2. Content
+   1. product introduction
+   2. About me
+3. Footer
