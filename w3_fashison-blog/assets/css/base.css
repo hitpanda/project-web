@@ -1,0 +1,17 @@
+:root {
+   --header-height: 38px;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   font-size: 62.5%;
+   line-height: 16px;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   font-family: arial, Arial, Helvetica, sans-serif;
+}

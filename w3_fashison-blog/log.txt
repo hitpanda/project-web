@@ -1,0 +1,11 @@
+THUC HANH 7
+   https://www.w3schools.com/w3css/tryw3css_templates_fashion_blog.htm
+
+1. Header
+   1. nav
+   2. search
+2. Slider 
+3. Content
+   1. blog
+   2. personal
+4. Footer
