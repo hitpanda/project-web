@@ -95,15 +95,36 @@
                         </p>
                      </div>
                      <div class="post__interactive">
-                        <div class="post__like">
-                           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="thumbs-up" class="post__like-icon svg-inline--fa fa-thumbs-up fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path></svg>
+                        <label for="post__like-input" class="post__like">
+                           <input type="checkbox" hidden id="post__like-input" class="post__like-input">
+                           <label for="post__like-input" class="post__like--liked">✓</label>
+                           <label for="post__like-input" class="post__like-icon-wrap">
+                              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="thumbs-up" class="post__like-icon svg-inline--fa fa-thumbs-up fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path></svg>
+                           </label>
                            <p>Like</p>
-                        </div>
-                        <div class="post__replies">
+                        </label>
+                        <label for="replies__input" class="post__replies">
                            <p>Replies</p>
-                           <span>2</span>
-                        </div>
+                           <span>1</span>
+                        </label>
                      </div>
+                     <input type="checkbox" hidden id="replies__input" class="replies__input">
+                     <ul class="replies-list">
+                        <li class="replies-list__item">
+                           <div class="l-2">
+                              <img src="./assets/img/avatar_smoke.jpg" alt="" class="replies-list__img">
+                           </div>
+                           <div class="l-10">
+                              <div class="replies-person">
+                                 <div class="replies-person__info">
+                                    <h4 class="replies-person__name">George</h4>
+                                    <span>May 3, 2015, 6:32 PM</span>
+                                 </div>
+                                 <p class="replies-person__cmt">Great blog post! Following</p>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
                   </div>
                   <div class="post">
                      <h3 class="post__heading">TITLE HEADING</h3>
@@ -121,15 +142,52 @@
                         </p>
                      </div>
                      <div class="post__interactive">
-                        <div class="post__like">
-                           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="thumbs-up" class="post__like-icon svg-inline--fa fa-thumbs-up fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path></svg>
+                        <label for="post__like-input-2" class="post__like">
+                           <input type="checkbox" hidden id="post__like-input-2" class="post__like-input-2">
+                           <label for="post__like-input-2" class="post__like--liked">✓</label>
+                           <label for="post__like-input-2" class="post__like-icon-wrap">
+                              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="thumbs-up" class="post__like-icon svg-inline--fa fa-thumbs-up fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path></svg>
+                           </label>
                            <p>Like</p>
-                        </div>
-                        <div class="post__replies">
+                        </label>
+                        <label for="replies__input-2" class="post__replies">
                            <p>Replies</p>
                            <span>2</span>
-                        </div>
+                        </label>
                      </div>
+                     <input type="checkbox" hidden id="replies__input-2" class="replies__input-2">
+                     <ul class="replies-list">
+                        <li class="replies-list__item">
+                           <div class="l-2">
+                              <img src="./assets/img/girl_train.jpg" alt="" class="replies-list__img">
+                           </div>
+                           <div class="l-10">
+                              <div class="replies-person">
+                                 <div class="replies-person__info">
+                                    <h4 class="replies-person__name">Amber</h4>
+                                    <span>April 26, 2015, 10:52 PM</span>
+                                 </div>
+                                 <p class="replies-person__cmt">
+                                    Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                 </p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="replies-list__item">
+                           <div class="l-2">
+                              <img src="./assets/img/girl.jpg" alt="" class="replies-list__img">
+                           </div>
+                           <div class="l-10">
+                              <div class="replies-person">
+                                 <div class="replies-person__info">
+                                    <h4 class="replies-person__name">Angie</h4>
+                                    <span>April 23, 2015, 9:12 PM</span>
+                                 </div>
+                                 <p class="replies-person__cmt">Love hats!!</p>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
                   </div>
                   <div class="post">
                      <h3 class="post__heading">TITLE HEADING</h3>
@@ -147,14 +205,172 @@
                         </p>
                      </div>
                      <div class="post__interactive">
-                        <div class="post__like">
-                           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="thumbs-up" class="post__like-icon svg-inline--fa fa-thumbs-up fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path></svg>
+                        <label for="post__like-input-3" class="post__like">
+                           <input type="checkbox" hidden id="post__like-input-3" class="post__like-input-3">
+                           <label for="post__like-input-3" class="post__like--liked">✓</label>
+                           <label for="post__like-input-3" class="post__like-icon-wrap">
+                              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="thumbs-up" class="post__like-icon svg-inline--fa fa-thumbs-up fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path></svg>
+                           </label>
                            <p>Like</p>
-                        </div>
-                        <div class="post__replies">
+                        </label>
+                        <label for="replies__input-3" class="post__replies">
                            <p>Replies</p>
-                           <span>2</span>
+                           <span>3</span>
+                        </label>
+                     </div>
+                     <input type="checkbox" hidden id="replies__input-3" class="replies__input-3">
+                     <ul class="replies-list">
+                        <li class="replies-list__item">
+                           <div class="l-2">
+                              <img src="./assets/img/girl_mountain.jpg" alt="" class="replies-list__img">
+                           </div>
+                           <div class="l-10">
+                              <div class="replies-person">
+                                 <div class="replies-person__info">
+                                    <h4 class="replies-person__name">Jane</h4>
+                                    <span>April 10, 2015, 7:22 PM</span>
+                                 </div>
+                                 <p class="replies-person__cmt">That was a great runway show! Thanks for everything.</p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="replies-list__item">
+                           <div class="l-2">
+                              <img src="./assets/img/boy.jpg" alt="" class="replies-list__img">
+                           </div>
+                           <div class="l-10">
+                              <div class="replies-person">
+                                 <div class="replies-person__info">
+                                    <h4 class="replies-person__name">John</h4>
+                                    <span>April 8, 2015, 10:32 PM</span>
+                                 </div>
+                                 <p class="replies-person__cmt">
+                                    Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                                 </p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="replies-list__item">
+                           <div class="l-2">
+                              <img src="./assets/img/girl_hood.jpg" alt="" class="replies-list__img">
+                           </div>
+                           <div class="l-10">
+                              <div class="replies-person">
+                                 <div class="replies-person__info">
+                                    <h4 class="replies-person__name">Anja</h4>
+                                    <span>April 7, 2015, 9:12 PM</span>
+                                 </div>
+                                 <p class="replies-person__cmt">Cant wait for the runway to start!</p>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col l-4">
+                  <div class="about-me">
+                     <img src="./assets/img/avatar_girl2.jpg" alt="" class="about-me__img">
+                     <h4 class="about-me__name">My Name</h4>
+                     <p class="about-me__des">
+                        Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.
+                     </p>
+                  </div>
+                  <div class="popular-post">
+                     <h4 class="popular-post__heading">Popular Posts</h4>
+                     <ul class="popular-post__list">
+                        <li class="popular-post__item">
+                           <img src="./assets/img/avatar_smoke.jpg" alt="" class="popular-post__item-img">
+                           <div class="popular-post__item-info">
+                              <p>Denim</p>
+                              <span>Sed mattis nunc</span>
+                           </div>
+                        </li>
+                        <li class="popular-post__item">
+                           <img src="./assets/img/bandmember.jpg" alt="" class="popular-post__item-img">
+                           <div class="popular-post__item-info">
+                              <p>Sweaters</p>
+                              <span>Praes tinci sed</span>
+                           </div>
+                        </li>
+                        <li class="popular-post__item">
+                           <img src="./assets/img/workshop.jpg" alt="" class="popular-post__item-img">
+                           <div class="popular-post__item-info">
+                              <p>Workshop</p>
+                              <span>Ultricies congue</span>
+                           </div>
+                        </li>
+                        <li class="popular-post__item">
+                           <img src="./assets/img/avatar_smoke.jpg" alt="" class="popular-post__item-img">
+                           <div class="popular-post__item-info">
+                              <p>Trends</p>
+                              <span>Lorem ipsum dipsum</span>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="advertise">
+                     <h4 class="advertise__heading">Advertise</h4>
+                     <ul class="advertise__list">
+                        <li class="advertise__list-item">
+                           <span>Your AD Here</span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="tags">
+                     <h4 class="tags__heading">Tags</h4>
+                     <div class="tags__element">
+                        <span class="tags__element--active">Fashion</span>
+                        <span>New York</span>
+                        <span>London</span>
+                        <span>Hats</span>
+                        <span>Norway</span>
+                        <span>Sweaters</span>
+                        <span>Ideas</span>
+                        <span>Deals</span>
+                        <span>Accessories</span>
+                        <span>News</span>
+                        <span>Clothing</span>
+                        <span>Shopping</span>
+                        <span>Jeans</span>
+                        <span>Trends</span>
+                     </div>
+                  </div>
+                  <div class="inspiration">
+                     <h4 class="inspiration__heading">Inspiration</h4>
+                     <div class="inspiration__hold-img">
+                        <div class="inspiration__img-wrap">
+                           <img src="./assets/img/jeans.jpg" alt="" class="inspiration__img">
                         </div>
+                        <div class="inspiration__img-wrap">
+                           <img src="./assets/img/avatar_hat.jpg" alt="" class="inspiration__img">
+                        </div>
+                        <div class="inspiration__img-wrap">
+                           <img src="./assets/img/team1.jpg" alt="" class="inspiration__img">
+                        </div>
+                        <div class="inspiration__img-wrap">
+                           <img src="./assets/img/team4.jpg" alt="" class="inspiration__img">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="contact">
+                     <h4 class="contact__heading">Follow Me</h4>
+                     <div class="contact__icon-wrap">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-square" class="contact__icon svg-inline--fa fa-facebook-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="contact__icon svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="snapchat" class="contact__icon svg-inline--fa fa-snapchat fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm169.5 338.9c-3.5 8.1-18.1 14-44.8 18.2-1.4 1.9-2.5 9.8-4.3 15.9-1.1 3.7-3.7 5.9-8.1 5.9h-.2c-6.2 0-12.8-2.9-25.8-2.9-17.6 0-23.7 4-37.4 13.7-14.5 10.3-28.4 19.1-49.2 18.2-21 1.6-38.6-11.2-48.5-18.2-13.8-9.7-19.8-13.7-37.4-13.7-12.5 0-20.4 3.1-25.8 3.1-5.4 0-7.5-3.3-8.3-6-1.8-6.1-2.9-14.1-4.3-16-13.8-2.1-44.8-7.5-45.5-21.4-.2-3.6 2.3-6.8 5.9-7.4 46.3-7.6 67.1-55.1 68-57.1 0-.1.1-.2.2-.3 2.5-5 3-9.2 1.6-12.5-3.4-7.9-17.9-10.7-24-13.2-15.8-6.2-18-13.4-17-18.3 1.6-8.5 14.4-13.8 21.9-10.3 5.9 2.8 11.2 4.2 15.7 4.2 3.3 0 5.5-.8 6.6-1.4-1.4-23.9-4.7-58 3.8-77.1C183.1 100 230.7 96 244.7 96c.6 0 6.1-.1 6.7-.1 34.7 0 68 17.8 84.3 54.3 8.5 19.1 5.2 53.1 3.8 77.1 1.1.6 2.9 1.3 5.7 1.4 4.3-.2 9.2-1.6 14.7-4.2 4-1.9 9.6-1.6 13.6 0 6.3 2.3 10.3 6.8 10.4 11.9.1 6.5-5.7 12.1-17.2 16.6-1.4.6-3.1 1.1-4.9 1.7-6.5 2.1-16.4 5.2-19 11.5-1.4 3.3-.8 7.5 1.6 12.5.1.1.1.2.2.3.9 2 21.7 49.5 68 57.1 4 1 7.1 5.5 4.9 10.8z"></path></svg>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="flickr" class="contact__icon svg-inline--fa fa-flickr fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM144.5 319c-35.1 0-63.5-28.4-63.5-63.5s28.4-63.5 63.5-63.5 63.5 28.4 63.5 63.5-28.4 63.5-63.5 63.5zm159 0c-35.1 0-63.5-28.4-63.5-63.5s28.4-63.5 63.5-63.5 63.5 28.4 63.5 63.5-28.4 63.5-63.5 63.5z"></path></svg>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="contact__icon svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="contact__icon svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+                     </div>
+                  </div>
+                  <div class="subscribe">
+                     <h4 class="subscribe__heading">Subscribe</h4>
+                     <div class="subscribe__content-wrap">
+                        <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+                        <input type="text" placeholder="Enter e-mail">
+                        <label for="sub-checkbox" class="subscribe__sub subscribe-modal__sub">
+                           <span>Subscribe</span>
+                        </label>
                      </div>
                   </div>
                </div>
@@ -163,7 +379,14 @@
       </div>
 
       <footer class="footer" id="footer">
-
+         <a href="#" class="footer__back">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-up" class="footer__back-icon svg-inline--fa fa-arrow-up fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
+            <span>To the top</span>
+         </a>
+         <div class="footer__license">
+            <p>Powered by</p>
+            <a href="">w3.css</a>
+         </div>
       </footer>
    </div>
 </body>
