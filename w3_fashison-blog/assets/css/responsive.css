@@ -1,0 +1,66 @@
+/* mobile & tablet */
+@media (max-width: 1023px) {
+   
+}
+
+/* mobile */
+@media (max-width: 739px) {
+   .slider {
+      margin-top: calc(var(--header-height) + 12px);
+   }
+   .slider__heading {
+      font-size: 3.6rem;
+   }
+   .slider__banner-name {
+      font-size: 2.6rem;
+      margin: 0;
+   }
+   .slider__banner-title {
+      font-size: 3rem;
+      line-height: 34px;
+   }
+   .slider__banner-btn {
+      max-width: 116px;
+   }
+   .slider__banner-btn span {
+      font-size: 1.6rem;
+      padding: 8px 12px;
+      line-height: 22px;
+   }
+   .subscribe-modal {
+      width: 100%;
+   }
+   .subscribe-modal__heading {
+      font-size: 2.4rem;
+   }
+   .content {
+      padding: 24px 0;
+   }
+   .replies-list__item {
+      margin-top: 12px;
+   }
+   .replies-list__img {
+      width: 50px;
+      margin-right: 14px;
+   }
+   .replies-person__name {
+      font-size: 1.6rem;
+   }
+   .replies-person__info span {
+      font-size: 1.3rem;
+      top: 0;
+   }
+   .replies-person__cmt {
+      margin: 8px 0;
+   }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+   .subscribe-modal {
+      width: 650px;
+   }
+   .content {
+      padding: 24px 16px;
+   }
+}
