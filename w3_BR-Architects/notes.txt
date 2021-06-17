@@ -16,4 +16,4 @@ Thực Hành 3:
 3. Code
 4. Hoàn thiện
 
-link demo: https://hitpanda.github.io/project-web/w3_BR Architects/index.html
+link demo: https://hitpanda.github.io/project-web/w3_BR-Architects/index.html
