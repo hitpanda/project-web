@@ -9,3 +9,5 @@ THUC HANH 7
    1. blog
    2. personal
 4. Footer
+
+link demo: https://hitpanda.github.io/project-web/w3_fashison-blog/index.html

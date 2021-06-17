@@ -15,3 +15,4 @@ Thursday, May 6, 2021
 3. Xây dựng từng phần theo phân tích -> OK
 4. Hoàn thiện -> OK
 
+link demo: https://hitpanda.github.io/project-web/w3_band/index.html

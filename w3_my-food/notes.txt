@@ -7,3 +7,5 @@ THUC HANH 6:
    1. product introduction
    2. About me
 3. Footer
+
+link demo: https://hitpanda.github.io/project-web/w3_my-food/index.html

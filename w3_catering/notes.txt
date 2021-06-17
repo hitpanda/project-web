@@ -14,3 +14,5 @@ THỰC HÀNH 2:
 2. Dựng base -> OK
 3. Code -> OK
 4. Hoàn thành -> OK
+
+link demo: https://hitpanda.github.io/project-web/w3_catering/index.html
