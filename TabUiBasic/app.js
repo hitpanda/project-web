@@ -34,8 +34,6 @@ const panes = $$('.tab-pane')
 const tabActive = $('.tab-item.active')
 const line = $('.tabs .line')
 
-console.log({line})
-
 line.style.left = tabActive.offsetLeft + 'px'
 line.style.width = tabActive.offsetWidth + 'px'
 
