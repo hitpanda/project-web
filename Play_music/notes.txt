@@ -1,3 +1,11 @@
 project is sample in Javascript course
 
-link demo: 
+Analysis
+   1. Header
+      - Heading
+      - Music name
+   2. CD
+   3. Control
+   4. Playlist
+
+link demo: https://hitpanda.github.io/project-web/Play_music/index.html
