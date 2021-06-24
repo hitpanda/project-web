@@ -149,7 +149,8 @@ header h2 {
 }
 
 .song:active {
-   opacity: 0.8;
+   opacity: 0.4;
+   animation: all linear 0.2s;
 }
 
 .song.active .option,

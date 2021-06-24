@@ -3,11 +3,11 @@
  * 2. Scroll top => ok
  * 3. Play / pause / seek => ok
  * 4. CD rotate => ok
- * 5. Next / prev
- * 6. Random
- * 7. Next / Repeat when ended
- * 8. Active song
- * 9. Scroll active song into view
+ * 5. Next / prev => ok
+ * 6. Random => ok
+ * 7. Next / Repeat when ended => ok
+ * 8. Active song => ok
+ * 9. Scroll active song into view => ok
  * 10. Play song when click
  */
 
@@ -23,10 +23,15 @@ const playBtn = $('.btn-toggle-play')
 const progress = $('#progress')
 const prevBtn = $('.btn-prev')
 const nextBtn = $('.btn-next')
+const randomBtn = $('.btn-random')
+const repeatBtn = $('.btn-repeat')
+const playlist = $('.playlist')
 
 const app = {
    currentIndex: 0,
    isPlaying: false,
+   isRandom: false,
+   isRepeat: false,
    songs: [
       {
          name: 'Sài Gòn Đau Lòng Quá',
@@ -90,9 +95,9 @@ const app = {
       }
    ],
    render: function() {
-      const htmls = this.songs.map(song => {
+      const htmls = this.songs.map((song, index) => {
          return `
-            <div class="song">
+            <div data-index="${index}" class="song ${index === this.currentIndex ? 'active' : ''}">
                <div class="thumb" style="background-image: url('${song.image}')">
                </div>
                <div class="body">
@@ -105,7 +110,7 @@ const app = {
             </div>
          `
       })
-      $('.playlist').innerHTML = htmls.join('')
+      playlist.innerHTML = htmls.join('')
    },
    defineProperties: function() {
       Object.defineProperty(this, 'currentSong', {
@@ -175,20 +180,78 @@ const app = {
 
       // when next song
       nextBtn.onclick = function() {
-         _this.nextSong()
+         if (_this.isRandom) {
+            _this.playRandomSong()
+         } else {
+            _this.nextSong()
+         }
+         _this.loadCurrentSong()
+         _this.scrollToActiveSong()
          audio.play()
+         // _this.render()
       }
 
       // when prev song
       prevBtn.onclick = function() {
          _this.prevSong()
+         _this.loadCurrentSong()
+         _this.scrollToActiveSong()
          audio.play()
+         // _this.render()
+      }
+
+      // When random song
+      randomBtn.onclick = function() {
+         _this.isRandom = !_this.isRandom
+         randomBtn.classList.toggle('active', _this.isRandom)
+      }
+
+      // When repeat song
+      repeatBtn.onclick = function() {
+         _this.isRepeat = !_this.isRepeat
+         repeatBtn.classList.toggle('active', _this.isRepeat)
+      }
+
+      // Auto next song when song ended
+      audio.onended = function() {
+         if (_this.isRepeat) {
+            audio.play()
+         } else {
+            nextBtn.click()
+         }
+      }
+
+      // when click on playlist
+      playlist.onclick = function(e) {
+         const songNode = e.target.closest('.song:not(.active)')
+         if (songNode || e.target.closest('.option')) {
+            // Xử lý khi click vào song
+            if (songNode) {
+               _this.currentIndex = Number(songNode.dataset.index)
+               _this.loadCurrentSong()
+               audio.play()
+            }
+            // Xử lý khi click vào option
+            if (e.target.closest('.option')) {
+
+            }
+         }
       }
    },
    loadCurrentSong: function() {
       heading.textContent = this.currentSong.name
       cdThumb.style.backgroundImage = `url('${this.currentSong.image}')`
       audio.src = this.currentSong.path
+
+      if ($('.song.active')) {
+         $('.song.active').classList.remove('active')
+      }
+      const list = $$('.song')
+      list.forEach(song => {
+         if (song.getAttribute('data-index') == this.currentIndex) {
+            song.classList.add('active')
+         }
+      })
    },
    nextSong: function() {
       this.currentIndex++
@@ -204,6 +267,30 @@ const app = {
       }
       this.loadCurrentSong()
    },
+   playRandomSong: function() {
+      let newIndex
+      do {
+         newIndex = Math.floor(Math.random() * this.songs.length)
+      } while (newIndex === this.currentIndex)
+      
+      this.currentIndex = newIndex
+      this.loadCurrentSong()
+   },
+   scrollToActiveSong: function () {
+      setTimeout(() => {
+         if (this.currentIndex <= 2) {
+            $('.song.active').scrollIntoView({
+               behavior: 'smooth',
+               block: 'end'
+            })
+         } else {
+            $('.song.active').scrollIntoView({
+               behavior: 'smooth',
+               block: 'center'
+            })
+         }
+      }, 200);
+   },  
    start: function() {
       // Định nghĩa các thuộc tính cho Object
       this.defineProperties()
