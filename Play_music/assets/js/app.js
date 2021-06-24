@@ -8,7 +8,7 @@
  * 7. Next / Repeat when ended => ok
  * 8. Active song => ok
  * 9. Scroll active song into view => ok
- * 10. Play song when click
+ * 10. Play song when click => ok
  */
 
 const $ = document.querySelector.bind(document)
