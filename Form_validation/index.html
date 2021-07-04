@@ -39,6 +39,25 @@
             <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
             <span class="form-message"></span>
          </div>
+
+         <!-- <div class="form-group">
+            <label class="form-label">Giới tính</label>
+            <div>
+               <div>
+                  <input type="radio" name="gender" value="male">
+                  Nam
+               </div>
+               <div>
+                  <input type="radio" name="gender" value="female">
+                  Nữ
+               </div>
+               <div>
+                  <input type="radio" name="gender" value="other">
+                  Khác
+               </div>
+            </div>
+            <span class="form-message"></span>
+         </div> -->
       
          <button class="form-submit">Đăng ký</button>
       </form>
@@ -49,6 +68,7 @@
    <script>
       Validator({
          form: '#form-1',
+         formGroupSelector: '.form-group',
          errorSelector: '.form-message',
          rules:[
             Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ'),
@@ -59,8 +79,13 @@
             Validator.isRequired('#password_confirmation'),
             Validator.isConfirmed('#password_confirmation', function() {
                return document.querySelector('#form-1 #password').value
-            }, 'Mật khẩu nhập lại không chính xác')
-         ]
+            }, 'Mật khẩu nhập lại không chính xác'),
+            // Validator.isRequired('input[name="gender"]')
+         ],
+         onSubmit: function(data) {
+            // Call API
+            console.log(data)
+         }
       })
    </script>
 </body>
