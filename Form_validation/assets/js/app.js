@@ -68,11 +68,11 @@ function Validator(options) {
             // Submit với Javascript
             if (typeof options.onSubmit === 'function') {
                var enableInputs = formElement.querySelectorAll('[name]')
-
+               
                var formValues = Array.from(enableInputs).reduce(function(values, input) {
                   switch (input.type) {
                      case 'radio':
-                        values[input.value] = formElement.querySelector('input[name="' + input.name + '"]:checked').value
+                        values[input.name] = formElement.querySelector('input[name="' + input.name + '"]:checked').value
                         break
                      case 'checkbox':
                         if (!input.matches(':checked')) {
@@ -88,9 +88,8 @@ function Validator(options) {
                         values[input.name] = input.files
                         break
                      default:
-                        values[input.value] = input.value
+                        values[input.name] = input.value
                   }
-                  
                   return values
                }, {})
 
