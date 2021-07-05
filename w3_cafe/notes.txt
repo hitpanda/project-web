@@ -1,0 +1,16 @@
+Link demo: https://hitpanda.github.io/project-web/w3_cafe/index.html
+
+Practice 8:
+   https://www.w3schools.com/w3css/tryw3css_templates_cafe.htm
+
+1. Header
+   - nav
+2. Slider
+   - heading
+   - time open
+3. Main content
+   - about
+   - menu
+   - contact
+4. Footer
+   - link
