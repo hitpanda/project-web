@@ -14,22 +14,165 @@
    <div class="main" id="main">
       <!-- header -->
       <header id="header" class="header">
-
+         <ul class="nav">
+            <li class="nav__item">
+               <a href="#">home</a>
+            </li>
+            <li class="nav__item">
+               <a href="#about">about</a>
+            </li>
+            <li class="nav__item">
+               <a href="#menu">menu</a>
+            </li>
+            <li class="nav__item">
+               <a href="#contact">where</a>
+            </li>
+         </ul>
       </header>
 
       <!-- slider -->
       <div id="slider" class="slider">
+         <div class="slider__time">
+            <span>
+               Open from 6am to 5pm
+            </span>
+         </div>
 
+         <div class="slider__heading">
+            <h1>
+               the
+               <br>
+               Cafe
+            </h1>
+         </div>
+
+         <div class="slider__address">
+            <span>
+               15 Adr street, 5015
+            </span>
+         </div>
       </div>
 
       <!-- main content -->
       <div class="content" id="content">
+         <!-- about -->
+         <div class="grid wide" id="about">
+            <div class="row">
+               <div class="col l-12">
+                  <h4 class="about__heading">
+                     <span>about the cafe</span>
+                  </h4>
+                  <p class="primary-text">
+                     The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                  <p class="primary-text">
+                     In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.
+                  </p>
+                  <div class="about__notes">
+                     <p class="primary-text">
+                        <i>
+                           "Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet."
+                        </i>
+                     </p>
+                     <p class="primary-text">
+                        Chef, Coffeeist and Owner: Liam Brown
+                     </p>
+                  </div>
+                  <img src="./assets/img/coffeeshop.jpg" alt="coffee shop" class="about__img">
+                  <p class="primary-text">
+                     <b>Opening hours:</b> everyday from 6am to 5pm.
+                  </p>
+                  <p class="primary-text">
+                     <b>Address:</b> 15 Adr street, 5015, NY
+                  </p>
+               </div>
+            </div>
+         </div>
 
+         <!-- menu -->
+         <div class="grid wide" id="menu">
+            <div class="row">
+               <div class="col l-12">
+                  <h4 class="menu__heading">
+                     <span>the menu</span>
+                  </h4>
+
+                  <div class="tabs">
+                     <h4 class="tabs__item active">Eat</h4>
+                     <h4 class="tabs__item">Drink</h4>
+                  </div>
+
+                  <div class="tabs-content">
+                     <div class="tabs-pane active">
+                        <h5>Bread Basket</h5>
+                        <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                        <br>
+                        <h5>Honey Almond Granola with Fruits</h5>
+                        <p>Assortment of fresh baked fruit breads and muffins 5.50Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                        <br>
+                        <h5>Belgian Waffle</h5>
+                        <p>Vanilla flavored batter with malted flour 7.50</p>
+                        <br>
+                        <h5>Scrambled eggs</h5>
+                        <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                        <br>
+                        <h5>Blueberry Pancakes</h5>
+                        <p>With syrup, butter and lots of berries 8.50</p>
+                     </div>
+                     <div class="tabs-pane">
+                        <h5>Coffee</h5>
+                        <p>Regular coffee 2.50</p>
+                        <br>
+                        <h5>Chocolate</h5>
+                        <p>Chocolate espresso with milk 4.50</p>
+                        <br>
+                        <h5>Corretto</h5>
+                        <p>Whiskey and coffee 5.00</p>
+                        <br>
+                        <h5>Iced tea</h5>
+                        <p>Hot tea, except not hot 3.00</p>
+                        <br>
+                        <h5>Soda</h5>
+                        <p>Coke, Sprite, Fanta, etc. 2.50</p>
+                     </div>
+                  </div>
+
+                  <img src="./assets/img/coffeehouse2.jpg" alt="coffeehouse2" class="menu__img">
+               </div>
+            </div>
+         </div>
+
+         <!-- contact -->
+         <div class="grid wide" id="contact">
+            <h4 class="contact__heading">
+               <span>where to find us</span>
+            </h4>
+            <p class="primary-text">
+               Find us at some address at some place.
+            </p>
+            <img src="./assets/img/map.jpg" alt="map" class="contact__img">
+            <p class="primary-text">
+               <span>fyi!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.
+            </p>
+            <p class="primary-text">
+               <b>Reserve</b> a table, ask for today's special or just send us a message:
+            </p>
+            <form>
+               <input type="text" placeholder="Name" name="name" required>
+               <input type="text" placeholder="How many people" name="amount" required>
+               <input type="datetime-local" name="time" value="2020-11-16T20:00" required>
+               <input type="text" placeholder="Message / Special requirements" name="message" required>
+               <button>
+                  <span>send message</span>
+               </button>
+            </form>
+         </div>
       </div>
 
       <!-- footer -->
       <footer id="footer" class="footer">
-         
+         <p>Powered by</p>
+         <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
       </footer>
    </div>
 

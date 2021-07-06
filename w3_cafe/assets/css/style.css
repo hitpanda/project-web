@@ -1,0 +1,257 @@
+.main {
+   overflow: hidden;
+   height: 100%;
+}
+
+/* header */
+.header {
+   --height: 54px;
+   position: fixed;
+   z-index: 5;
+   top: 0;
+   left: 0;
+   right: 0;
+   height: var(--height);
+   background-color: #000;
+   padding: 8px 16px;
+}
+
+.nav {
+   display: flex;
+   height: 100%;
+   list-style: none;
+}
+
+.nav__item {
+   width: 25%;
+}
+
+.nav__item > a {
+   display: block;
+   text-decoration: none;
+   color: #fff;
+   font-size: 1.2rem;
+   line-height: calc(var(--height) - 16px);
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.nav__item > a:hover {
+   background-color: #ccc;
+   color: #000;
+}
+
+/* slider */
+.slider {
+   position: relative;
+   min-height: 75vh;
+   background-image: url(https://www.w3schools.com/w3images/coffeehouse.jpg);
+   background-size: cover;
+   background-position: center;
+   filter: grayscale(50%);
+}
+
+.slider__time {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   padding: 12px 24px;
+}
+
+.slider__time span {
+   background-color: #000;
+   color: #fff;
+   text-align: center;
+   font-size: 1.2rem;
+   line-height: 22px;
+   padding: 4px 8px;
+   letter-spacing: 2px;
+}
+
+.slider__heading {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.slider__heading h1 {
+   color: #fff;
+   text-align: center;
+   font-size: 8.5rem;
+   line-height: 135px;
+   font-weight: 200;
+}
+
+.slider__address {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   padding: 12px 24px;
+}
+
+.slider__address span {
+   color: #fff;
+   text-align: center;
+   font-size: 1.2rem;
+   line-height: 22px;
+   padding: 4px 8px;
+   letter-spacing: 2px;
+}
+
+/* content */
+/* about */
+.about__heading,
+.menu__heading,
+.contact__heading {
+   padding: 64px 0;
+   text-align: center;
+   margin: 10px 0;
+}
+
+.about__heading span,
+.menu__heading span,
+.contact__heading span {
+   font-size: 1.8rem;
+   color: #fff;
+   background-color: #000;
+   line-height: 22px;
+   padding: 4px 8px;
+   text-transform: uppercase;
+   font-weight: 200;
+   letter-spacing: 2px;
+}
+
+.primary-text {
+   font-size: 1.5rem;
+   color: #000;
+   line-height: 18px;
+   letter-spacing: 2px;
+   margin: 15px 0;
+}
+
+.about__notes {
+   background-color: #f1f1f1;
+   border-left: 6px solid #ccc;
+   padding: 8px 12px;
+   margin-bottom: 40px;
+}
+
+.about__img {
+   width: 100%;
+}
+
+/* menu */
+.tabs {
+   display: flex;
+   padding: 8px 16px;
+   box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.tabs__item {
+   flex: 0 0 50%;
+   color: #000;
+   font-size: 1.7rem;
+   line-height: 22px;
+   padding: 4px 8px;
+   text-align: center;
+   font-weight: 200;
+   cursor: pointer;
+}
+
+.tabs__item.active {
+   display: block;
+   background-color: #616161;
+   color: #fff;
+}
+
+.tabs-content {
+   box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+   padding: 48px 16px;
+}
+
+.tabs-pane {
+   display: none;
+}
+
+.tabs-pane h5 {
+   font-size: 1.6rem;
+   color: #000;
+   line-height: 22px;
+   margin: 10px 0;
+}
+
+.tabs-pane p {
+   font-size: 1.5rem;
+   color: #616161;
+   line-height: 22px;
+   margin: 18px 0;
+}
+
+.tabs-pane.active {
+   display: block;
+}
+
+.menu__img {
+   width: 100%;
+   margin-top: 32px;
+   vertical-align: middle;
+   filter: grayscale(70%);
+}
+
+/* contact */
+#contact > .primary-text > span {
+   text-transform: uppercase;
+   background-color: #000;
+   color: #fff;
+   font-size: 1.5rem;
+   line-height: 24px;
+   padding: 4px 8px;
+}
+
+.contact__img {
+   width: 100%;
+}
+
+form > input {
+   width: 100%;
+   padding: 16px 8px;
+   margin-bottom: 20px;
+   border: 1px solid #ccc;
+   font-size: 1.5rem;
+}
+
+form > button {
+   border: none;
+   margin: 15px 0 60px;
+}
+
+form > button > span {
+   background-color: #000;
+   color: #fff;
+   padding: 12px 14px;
+   font-size: 1.5rem;
+   line-height: 24px;
+   text-transform: uppercase;
+   cursor: pointer;
+}
+
+/* footer */
+.footer {
+   display: flex;
+   padding: 48px 0;
+   background-color: #f1f1f1;
+   justify-content: center;
+   font-size: 1.6rem;
+   line-height: 24px;
+}
+
+.footer p {
+   color: #000;
+   letter-spacing: 2px;
+   margin-right: 4px;
+}
+
+.footer a {
+   color: #000;
+}
