@@ -1,8 +1,13 @@
-<h1 align="center">SOME PERSONAL PROJECTS</h1>
+<h1 align="center">Some personal projects</h1>
 
-<p align="center">Where to store the projects I worked on during my studies</p>
+<p align="center">where to store the projects I worked on during my studies</p>
 
 ## Links
+
+| Left-aligned | Center-aligned | Right-aligned |
+| :----------- | :------------: | ------------: |
+| git status   |   git status   |    git status |
+| git diff     |    git diff    |      git diff |
 
 <!-- - [Repo](https://github.com/Rohit19060/<project-name> "<project-name> Repo")
 
@@ -64,7 +69,7 @@ For running the server file on you can use this command.
 
 **HITPanda**
 
-- [Github](https://github.com/hitpanda "Tran Huan")
+- [Github](https://github.com/hitpanda)
 - [Facebook](https://www.facebook.com/panda.huan.9/)
 
 ## 🤝 Support
