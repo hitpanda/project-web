@@ -5,9 +5,9 @@
 ## Links
 
 | No | Project Name | Folder | Demo |
-| :----------- | :------------: | ------------: | ------------: |
-| 01 |   git status   |    git status |    git status |
-| 01 |    git diff    |      git diff |      git diff |
+| :----------- | :------------: | :------------: | ------------: |
+| 01 |  |  |  |
+| 01 |  |  |  |
 
 <!-- - [Repo](https://github.com/Rohit19060/<project-name> "<project-name> Repo")
 
