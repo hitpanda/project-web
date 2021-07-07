@@ -4,12 +4,10 @@
 
 ## Links
 
-<div align="center">
-| Left-aligned | Center-aligned | Right-aligned |
-| :----------- | :------------: | ------------: |
-| git status   |   git status   |    git status |
-| git diff     |    git diff    |      git diff |
-</div>
+| No | Project Name | Folder | Demo |
+| :----------- | :------------: | ------------: | ------------: |
+| 01 |   git status   |    git status |    git status |
+| 01 |    git diff    |      git diff |      git diff |
 
 <!-- - [Repo](https://github.com/Rohit19060/<project-name> "<project-name> Repo")
 
