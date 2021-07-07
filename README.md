@@ -1,28 +1,26 @@
-where to store personal projects
+<h1 align="center">SOME PERSONAL PROJECTS</h1>
 
-<h1 align="center"><project-name></h1>
-
-<p align="center"><project-description></p>
+<p align="center">Where to store the projects I worked on during my studies</p>
 
 ## Links
 
-- [Repo](https://github.com/Rohit19060/<project-name> "<project-name> Repo")
+<!-- - [Repo](https://github.com/Rohit19060/<project-name> "<project-name> Repo")
 
 - [Live](<Homepage url> "Live View")
 
 - [Bugs](https://github.com/Rohit19060/<project-name>/issues "Issues Page")
 
-- [API](<API Link> "API")
+- [API](<API Link> "API") -->
 
-## Screenshots
+<!-- ## Screenshots
 
 ![Home Page](/screenshots/1.png "Home Page")
 
 ![](/screenshots/2.png)
 
-![](/screenshots/3.png)
+![](/screenshots/3.png) -->
 
-## Available Commands
+<!-- ## Available Commands
 
 In the project directory, you can run:
 
@@ -47,28 +45,27 @@ For running the server and app together I am using concurrently this helps a lot
 
 For running the server file on you can use this command.
 
-### `npm run serve`
+### `npm run serve` -->
 
 ## Built With
 
 - JavaScript
-- Node
+<!-- - Node
 - NPM
-- Webpack
+- Webpack -->
 - HTML
 - CSS
 
-## Future Updates
+<!-- ## Future Updates
 
-- [ ] Reliable Storage
+- [ ] Reliable Storage -->
 
 ## Author
 
-**Rohit Jain**
+**HITPanda**
 
-- [Profile](https://github.com/rohit19060 "Rohit jain")
-- [Email](mailto:rohitjain19060@gmail.com?subject=Hi "Hi!")
-- [Website](https://kingtechnologies.in "Welcome")
+- [Github](https://github.com/hitpanda "Tran Huan")
+- [Facebook](https://www.facebook.com/panda.huan.9/)
 
 ## 🤝 Support
 
