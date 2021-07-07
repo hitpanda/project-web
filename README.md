@@ -6,7 +6,7 @@
 
 | No | Project Name | Folder | Demo |
 | -- | ------------ | ------ | ---- |
-| 01 |  |  |  |
+| 01 |  |  | [link](https://hitpanda.github.io/project-web/ShopeeFake/index.html) |
 | 02 |  |  |  |
 |  |  |  |  |
 
