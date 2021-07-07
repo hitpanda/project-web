@@ -6,9 +6,18 @@
 
 | No | Project Name | Folder | Demo |
 | -- | ------------ | ------ | ---- |
-| 01 |  |  | [link](https://hitpanda.github.io/project-web/ShopeeFake/index.html) |
-| 02 |  |  |  |
-|  |  |  |  |
+| 01 | Shopee Fake | [ShopeeFake](https://github.com/hitpanda/project-web/tree/main/ShopeeFake) | [Link](https://hitpanda.github.io/project-web/ShopeeFake/index.html) |
+| 02 | w3 Band | [w3_band](https://github.com/hitpanda/project-web/tree/main/w3_band) | [Link](https://hitpanda.github.io/project-web/w3_band/index.html) |
+| 03 | w3 Catering | [w3_catering](https://github.com/hitpanda/project-web/tree/main/w3_catering) | [Link](https://hitpanda.github.io/project-web/w3_catering/index.html) |
+| 04 | w3 BR Architects | [w3_BR-Architects](https://github.com/hitpanda/project-web/tree/main/w3_BR-Architects) | [Link](https://hitpanda.github.io/project-web/w3_BR-Architects/index.html) |
+| 05 | w3 CV | [w3_cv-one-page](https://github.com/hitpanda/project-web/tree/main/w3_cv-one-page) | [Link](https://hitpanda.github.io/project-web/w3_cv-one-page/index.html) |
+| 06 | w3 My Blog | [w3_my-blog](https://github.com/hitpanda/project-web/tree/main/w3_my-blog) | [Link](https://hitpanda.github.io/project-web/w3_my-blog/index.html) |
+| 07 | w3 My Food | [w3_my-blog](https://github.com/hitpanda/project-web/tree/main/w3_my-food) | [Link](https://hitpanda.github.io/project-web/w3_my-food/index.html) |
+| 08 | w3 Fashion Blog | [w3_fashion-blog](https://github.com/hitpanda/project-web/tree/main/w3_fashion-blog) | [Link](https://hitpanda.github.io/project-web/w3_fashion-blog/index.html) |
+| 09 | w3 Cafe | [w3_cafe](https://github.com/hitpanda/project-web/tree/main/w3_cafe) | [Link](https://hitpanda.github.io/project-web/w3_cafe/index.html) |
+| 10 | Tab UI Basic | [TabUiBasic](https://github.com/hitpanda/project-web/tree/main/TabUiBasic) | [Link](https://hitpanda.github.io/project-web/TabUiBasic/index.html) |
+| 11 | Play Music | [Play_music](https://github.com/hitpanda/project-web/tree/main/Play_music) | [Link](https://hitpanda.github.io/project-web/Play_music/index.html) |
+| 12 | Form Validation | [Form_validation](https://github.com/hitpanda/project-web/tree/main/Form_validation) | [Link](https://hitpanda.github.io/project-web/Form_validation/index.html) |
 
 <!-- - [Repo](https://github.com/Rohit19060/<project-name> "<project-name> Repo")
 
