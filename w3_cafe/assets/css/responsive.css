@@ -1,0 +1,40 @@
+/* mobile & tablet */
+@media (max-width: 1023px) {
+   
+}
+
+/* mobile */
+@media (max-width: 739px) {
+   .header {
+      --height: 42px;
+      padding: 4px 8px;
+   }
+   .slider__time {
+      padding: 12px 8px;
+   }
+   .slider__time span {
+      padding: 4px;
+   }
+   .slider {
+      min-height: 80vh;
+   }
+   .about__heading, 
+   .menu__heading, 
+   .contact__heading {
+      padding: 46px 0;
+   }
+   .col {
+      padding-left: 8px;
+      padding-right: 8px;
+   }
+   .footer {
+      padding: 30px 0;
+   }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+   .slider {
+      min-height: 60vh;
+   }
+}

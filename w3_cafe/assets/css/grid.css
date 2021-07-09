@@ -33,7 +33,14 @@
 
 /* >= tablet */
 @media (min-width: 740px) {
-
+   .m-0 {
+      display: none;
+   }
+   .m-12 {
+      display: block;
+      flex: 0 0 100%;
+      max-width: 100%;
+   }
 }
 
 /* tablet - PC low resolution */
