@@ -55,7 +55,7 @@ Launches the test runner in the interactive watch mode.
 
 ### `"npm run dev": "concurrently "nodemon server" "npm run start"`,
 
-For running the server and app together I am using concurrently this helps a lot in the MERN application as it runs both the server (client and server) concurrently. So you can work on them both together.
+For running the server and app together I am using concurrently this helps a lot in the MERE application as it runs both the server (client and server) concurrently. So you can work on them both together.
 
 ### `"serve": "node server"`
 
