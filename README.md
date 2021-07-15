@@ -19,7 +19,6 @@
 | 11 | Play Music | [Play_music](https://github.com/hitpanda/project-web/tree/main/Play_music) | [Link](https://hitpanda.github.io/project-web/Play_music/index.html) |
 | 12 | Form Validation | [Form_validation](https://github.com/hitpanda/project-web/tree/main/Form_validation) | [Link](https://hitpanda.github.io/project-web/Form_validation/index.html) |
 | 13 | To Do List | [to-do-list](https://github.com/hitpanda/project-web/tree/main/to-do-list) | [Link](http://htodolist.byethost4.com/) |
-| 14 | Tic Tac Toe | [tic-tac-toe](https://github.com/hitpanda/project-web/tree/main/tic-tac-toe) | [Link](https://hitpanda.github.io/project-web/tic-tac-toe/build/index.html) |
 
 <!-- - [Repo](https://github.com/Rohit19060/<project-name> "<project-name> Repo")
 
