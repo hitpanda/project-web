@@ -67,9 +67,6 @@ For running the server file on you can use this command.
 ## Built With
 
 - JavaScript
-<!-- - Node
-- NPM
-- Webpack -->
 - HTML
 - CSS
 - ReactJS
